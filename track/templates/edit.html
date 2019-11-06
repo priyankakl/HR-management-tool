@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/edit.css">
+</head>
+<form action="/edit/{{employee.ecode}}/" method="POST">
+{% csrf_token %}
+    <div class="form-group">
+            <label for="exampleInput1">Name</label>
+            <input type="text" name="name" class="form-control" id="exampleInput1" value="{{employee.name}}">
+    </div>
+    <div class="form-group">
+            <label for="exampleInput2">Ecode</label>
+            <input type="number" name="ecode" class="form-control" id="exampleInput2" placeholder="Enter ecode" value="{{employee.ecode}}">
+    </div>
+    <div class="form-group">
+            <label for="exampleInput3">Date of joining</label>
+            <input type="date" name="doj" class="form-control" id="exampleInput3" placeholder="Enter Date" value="{{employee.doj}}">
+    </div>
+    <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="{{employee.email}}">       
+    </div>    
+    <div class="form-group">
+            <label for="exampleInput4">Date of Birth</label>
+            <input type="date" name="dob" class="form-control" id="exampleInput4" placeholder="Enter Date" value="{{employee.dob}}">
+    </div>
+    <div class="form-group">
+            <label for="exampleInput5">Department</label>
+            <input type="text" name="department" class="form-control" id="exampleInput5" placeholder="Enter department" value="{{employee.department}}">
+    </div>
+    <div class="form-group">
+            <label for="exampleInput6">Designation</label>
+            <input type="text" name="designation" class="form-control" id="exampleInput6" placeholder="Enter designation" value="{{employee.designation}}">
+    </div>
+    <div class="form-group">
+            <label for="exampleInput7">Location</label>
+            <input type="text" name="location" class="form-control" id="exampleInput7" placeholder="Enter Location" value="{{employee.location}}">
+    </div>
+    <!-- <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %} 

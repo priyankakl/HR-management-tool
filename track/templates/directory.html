@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/directory.css">
+</head>
+<div class="container">
+    <br>
+    <h1><b>Directory</b></h1>
+    <a class="btn btn-primary" href="/add/" role="button">Add Employee</a>
+    <br>
+    <br>
+    {% for employee in employees %}
+        <ul class="list-group">
+            <li class="list-group-item"><h5><b>Name:{{employee.name}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Ecode:{{employee.ecode}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Date of Joining:{{employee.doj}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Email:{{employee.email}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Date of Birth:{{employee.dob}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Department:{{employee.department}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Designation:{{employee.designation}}</b></h5></li>
+            <li class="list-group-item"><h5><b>Location:{{employee.location}}</b></h5></li>
+        </ul>
+        <br>
+        <a class="btn btn-primary" href="/edit/{{employee.ecode}}/" role="button">Update details</a>
+        <br>
+        <br>
+        <a class="btn btn-primary" href="/remove/{{employee.ecode}}/" role="button">Remove Employee</a>
+
+        <br><br>
+    <hr> 
+    {% endfor %}
+</div>
+{% endblock %}
+      
+    
+    
+    <!-- <ul class="list-group list-group-horizontal">
+        <a href="/employee/{{employee.ecode}}/">
+            <li class="list-group-item"><h3><b>{{employee.name}}</b></h3></li>
+        </a>
+        <li class="list-group-item"><h3>{{employee.ecode}}</h3></li>
+        <li class="list-group-item"><h3>{{employee.doj}}</h3></li>
+        <li class="list-group-item"><h3>{{employee.email}}</h3></li>
+        <li class="list-group-item"><h3>{{employee.dob}}</h3></li>
+        <li class="list-group-item"><h3>{{employee.department}}</h3></li>
+        <li class="list-group-item"><h3>{{employee.designation}}</h3></li>
+        <li class="list-group-item"><h3>{{employee.location}}</h3></li>
+    </ul>     -->
+    

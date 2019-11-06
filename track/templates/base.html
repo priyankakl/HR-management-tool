@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+		<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/dashboard.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            	<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="/dashboard/"><b>Dashboard &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</b>
+						 <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="/directory/"><b>Directory &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</b>
+					</a>
+					<a class="nav-item nav-link" href="/suggestions/"><b>Suggestion box &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</b>
+					 </a>
+					<a class="nav-item nav-link" href="/sotw/"><b>Star of the week &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</b>
+					</a>
+					<!-- <a class="nav-item nav-link" href="/birthday/">Upcoming Birthdays</a> -->
+					<a class="nav-item nav-link" href="/"><b>Logout &nbsp</b></a>
+					
+                	<!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            	</div>
+            </div>
+		</nav>
+		{% block body %} {% endblock %}
+    </body>
+</html>

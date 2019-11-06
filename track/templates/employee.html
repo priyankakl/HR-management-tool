@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+            <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+            {{selected_emp.name}}
+    </head>
+    <body>
+        <h1>{{selected_emp.ecode}}</h1>
+        <h1>{{selected_emp.doj}}</h1>
+        <h1>{{selected_emp.email}}</h1>
+        <h1>{{selected_emp.dob}}</h1>
+        <h1>{{selected_emp.department}}</h1>
+        <h1>{{selected_emp.designation}}</h1>
+        <h1>{{selected_emp.location}}</h1>
+        <a class="btn btn-primary" href="/remove/{{selected_emp.ecode}}/" role="button">Delete</a>
+        <a class="btn btn-primary" href="/directory/" role="button">Back to Directory</a>
+    </body>
+</html>
+

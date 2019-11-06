@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title></title>
+		<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/static/dashboard.css"> -->
+        <link rel="stylesheet" href="/static/signup.css"> 
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    ">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+            <div class="container">
+                <h1><b>Create new account</b></h1>
+                <hr>
+                <form action="/signup/" method="POST">
+                    {% csrf_token %}
+                    <p>username</p>
+                    <input type="username" name="username" class="form-control">
+                    <br> 
+                    <p>email</p>
+                    <input type="email" name="email" class="form-control">
+                    <br>  
+                    <p>password</p>
+                    <input type="password" name="password" class="form-control">
+                    <br> 
+                    <button type="submit" class="btn btn-md btn-success">Signup</button>
+                </form>
+            </div>     
+        </nav>          
+    </body>
+</html>
+

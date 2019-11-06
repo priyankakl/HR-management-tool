@@ -1,0 +1,29 @@
+/* .navbar navbar-expand-lg navbar-light bg-light{
+    height:100%;
+    width:100%;
+    padding:none;
+    margin:none;
+} */
+
+body{
+    background-color: #718093;
+}
+
+h1{
+    position:fixed;
+    left:15%;
+}
+
+.container{
+    position: fixed;
+    top:15%;
+    padding:none;
+    margin:none;
+}
+
+.navbar{
+    height:0px;
+    width:0px;
+    padding:none;
+    margin:none;
+}

@@ -1,0 +1,53 @@
+*{
+  background-color: #718093;
+  padding:none;
+  margin:none;
+}
+
+body{
+  background-color: #718093;
+}
+
+nav{
+  background-color: #718093;
+
+}
+
+.navbar-nav {
+  background-color: #718093;
+  /* left:20%; */
+  background-position: center center;
+   
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+  background-color: #718093;
+  padding:0px;
+  margin:0px;
+}
+
+
+a{
+  padding:none;
+  position: relative;
+  left:20%;
+}
+
+.container{
+  text-align: center ;
+  
+}
+
+.nav-item{
+  padding-right:40px;
+}
+
+/* *{
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
+
+a.btn.btn-primary{
+  position: relative;
+  left:0px;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/staroftheweek.css">
+</head>
+<div class="container3">
+    <h1><b>Star of the Week</b> </h1>
+    <br>
+    <a class="btn btn-primary" href="/star/" role="button">Want to suggest?</a>
+    <hr>
+    <br>
+    {% for star in stars %}
+    <ul class="list-group">
+        <li class="list-group-item"><h3><b>Who: {{star.who}}</b></h3></li>
+        <li class="list-group-item"><h3><b>Why: {{star.why}}</b></h3></li>
+    </ul>   
+    <br>
+    <a class="btn btn-primary" href="/remove2/{{star.who}}/" role="button">Delete</a>
+    <hr> 
+    {% endfor %}
+</div>
+{% endblock %}

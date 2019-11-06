@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/suggestions.css">
+</head>
+<div class="container5">
+    <h1><b>Suggestions</b></h1>
+    <br>
+    <a class="btn btn-primary" href="/suggest/" role="button">Want to suggest?</a>
+    <hr>
+    <br>
+    {% for suggestion in suggestions %}
+    <ul class="list-group">
+        <li class="list-group-item"><h3><b>Subject: {{suggestion.subject}}</b></h3></li>
+        <li class="list-group-item"><h3><b>Description: {{suggestion.description}}</b></h3></li>
+    </ul>  
+    <br>
+    <a class="btn btn-primary" href="/remove1/{{suggestion.subject}}/" role="button">Delete</a> 
+    <hr> 
+    {% endfor %}
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
